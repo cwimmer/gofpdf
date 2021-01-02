@@ -146,6 +146,7 @@ func fpdfNew(orientationStr, unitStr, sizeStr, fontDirStr string, size SizeType)
 	f.stdPageSizes["letter"] = SizeType{612, 792}
 	f.stdPageSizes["legal"] = SizeType{612, 1008}
 	f.stdPageSizes["tabloid"] = SizeType{792, 1224}
+	f.stdPageSizes["dymo30323"] = SizeType{153, 288}
 	if size.Wd > 0 && size.Ht > 0 {
 		f.defPageSize = size
 	} else {
